@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Product Catalog | Farm Produce, Bakery, Butchery &amp; Groceries</title>
+    <meta name="description" content="Browse fresh produce, artisanal bakery, quality butchery and everyday groceries. Search, filter by department and sort by price at Food Lover's Market.">
+    <meta name="keywords" content="fresh produce, bakery, butchery, groceries, Food Lover's Market, online shopping, South Africa">
+    <link rel="canonical" href="https://YOURSITE.netlify.app/product.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Shop Fresh Produce, Bakery and Butchery | Food Lover's Market">
+    <meta property="og:description" content="Search, filter and sort our farm-fresh departments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://YOURSITE.netlify.app/product.html">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img src="images/food-lovers-logo.png" alt="Food Lover's Market official brand logo" id="brand-logo" class="logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">&#9776;</button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html" class="active">Products</a></li>
+                    <li><a href="enquiry.html">Enquiries</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page-main">
+        <section class="catalog-intro">
+            <h1>Our Product Catalog</h1>
+            <p class="section-subtitle">Explore our farm-fresh departments. Use live search, department filters, and price sorting to find your favorites.</p>
+        </section>
+
+        <!-- Search, Filter & Sort Controls-->
+        <section class="catalog-controls card" style="margin-bottom: 2rem;">
+            <div class="search-box">
+                <label for="product-search" style="font-weight: 600;">Search Products:</label>
+                <input type="text" id="product-search" placeholder="Search by name or description (e.g. Apples, Steak, Milk)..." style="width: 100%; padding: 0.75rem; margin-top: 0.4rem;">
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem;">
+                <div class="category-filters">
+                    <button type="button" class="filter-btn active">All Departments</button>
+                    <button type="button" class="filter-btn">Fresh Produce</button>
+                    <button type="button" class="filter-btn">Bakery</button>
+                    <button type="button" class="filter-btn">Butchery</button>
+                    <button type="button" class="filter-btn">Groceries</button>
+                </div>
+
+                <div class="sort-box">
+                    <label for="product-sort" style="font-weight: 600; margin-right: 0.5rem;">Sort By:</label>
+                    <select id="product-sort" style="padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #CBD5E0;">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name-az">Name: A to Z</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid with Static Fallback + Dynamic Compatibility -->
+        <section class="products-catalog-section">
+            <div id="dynamic-product-grid" class="product-grid">
+
+                <!-- Card 1 -->
+                <article class="card product-card">
+                    <div class="product-image-container lightbox-trigger">
+                        <img src="images/crispy-red-apples.jpg" alt="Fresh Crisp Red Apples in a 1.5kg bag" class="product-image gallery-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-badge">Fresh Produce</span>
+                        <h3>Crisp Red Apples 1.5kg</h3>
+                        <p class="product-price">R29.99</p>
+                        <p class="product-desc">Sweet, juicy, and freshly picked from local Western Cape orchards.</p>
+                        <button type="button" class="btn-primary add-to-cart-btn" data-id="1">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card product-card">
+                    <div class="product-image-container lightbox-trigger">
+                        <img src="images/earthly-class1-potatoes.jpg" alt="Earthly Class 1 baking and roasting potatoes in a 7kg pocket" class="product-image gallery-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-badge">Fresh Produce</span>
+                        <h3>Class 1 Potatoes 7kg Pocket</h3>
+                        <p class="product-price">R69.99</p>
+                        <p class="product-desc">Farm-fresh versatile potatoes, ideal for roasting, mashing, or baking.</p>
+                        <button type="button" class="btn-primary add-to-cart-btn" data-id="2">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card product-card">
+                    <div class="product-image-container lightbox-trigger">
+                        <img src="images/bananas.jpg" alt="Naturally ripened organic yellow bananas in a 1.2kg cluster" class="product-image gallery-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-badge">Fresh Produce</span>
+                        <h3>Organic Bananas 1.2kg</h3>
+                        <p class="product-price">R24.99</p>
+                        <p class="product-desc">Naturally ripened and sourced directly from Mpumalanga growers.</p>
+                        <button type="button" class="btn-primary add-to-cart-btn" data-id="3">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card product-card">
+                    <div class="product-image-container lightbox-trigger">
+                        <img src="images/sourdough.jpg" alt="Freshly baked artisanal sourdough sliced bread loaf" class="product-image gallery-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-badge">Bakery</span>
+                        <h3>Artisanal Sourdough Sliced</h3>
+                        <p class="product-price">R34.99</p>
+                        <p class="product-desc">Slow-fermented artisan loaf baked daily in our stone-hearth bakery.</p>
+                        <button type="button" class="btn-primary add-to-cart-btn" data-id="4">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card product-card">
+                    <div class="product-image-container lightbox-trigger">
+                        <img src="images/steak.jpg" alt="A-grade tender beef rump steak 1kg vacuum sealed cut" class="product-image gallery-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-badge">Butchery</span>
+                        <h3>A-Grade Rump Steak 1kg</h3>
+                        <p class="product-price">R149.99</p>
+                        <p class="product-desc">Expertly aged, tender, and vacuum-sealed prime beef cut.</p>
+                        <button type="button" class="btn-primary add-to-cart-btn" data-id="5">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card product-card">
+                    <div class="product-image-container lightbox-trigger">
+                        <img src="images/milk.jpg" alt="Pasteurised whole farm-fresh milk in a 2-litre bottle" class="product-image gallery-image" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-badge">Groceries</span>
+                        <h3>Full Cream Fresh Milk 2L</h3>
+                        <p class="product-price">R32.99</p>
+                        <p class="product-desc">Pasteurised farm-fresh whole milk with natural dairy richness.</p>
+                        <button type="button" class="btn-primary add-to-cart-btn" data-id="6">Add to Cart</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Food Lover's Market Redesign Project. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Universal Project Script -->
+    <script src="script.js"></script>
+</body>
+</html>

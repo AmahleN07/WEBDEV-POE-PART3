@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of local developer caches or build artifacts
+Disallow: /scratch/
+Disallow: /bin/
+
+# Reference to the XML Sitemap
+Sitemap: [suspicious link removed]

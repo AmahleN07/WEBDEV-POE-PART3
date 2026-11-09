@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Product &amp; Store Enquiries | Corporate Catering &amp; Bulk Orders</title>
+    <meta name="description" content="Submit a product enquiry or corporate catering request to Food Lover's Market. Get in touch with our team for bulk fresh produce orders and event platters.">
+    <meta name="keywords" content="corporate catering Cape Town, bulk produce orders, grocery enquiry South Africa, wholesale fruit platters, catering quotes, Food Lovers customer support">
+    <link rel="canonical" href="[suspicious link removed]">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Corporate Catering &amp; Bulk Enquiries | Food Lover's Market">
+    <meta property="og:description" content="Request corporate platters, event catering, or wholesale bulk orders with our instant quotation calculator.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[suspicious link removed]">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img src="images/food-lovers-logo.png" alt="Food Lover's Market official brand logo" id="brand-logo" class="logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">&#9776;</button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiries</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="enquiry-page-main">
+        <section class="enquiry-intro">
+            <h1>Product &amp; Bulk Catering Enquiries</h1>
+            <p class="section-subtitle">Need bulk fresh produce, corporate event fruit platters, or artisan bakery pre-orders? Enter your details below for an instant confirmation and estimate.</p>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-form-section">
+            <form id="enquiry-form" class="card enquiry-card" novalidate>
+                
+                <div class="form-group">
+                    <label for="enquiry-name">Full Name: <span class="required">*</span></label>
+                    <input type="text" id="enquiry-name" name="name" placeholder="Enter your full name" required>
+                    <span class="error-msg" id="enquiry-name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-email">Email Address: <span class="required">*</span></label>
+                    <input type="email" id="enquiry-email" name="email" placeholder="Enter your email address" required>
+                    <span class="error-msg" id="enquiry-email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-phone">Phone Number: <span class="required">*</span></label>
+                    <input type="tel" id="enquiry-phone" name="phone" placeholder="Enter your phone number" required>
+                    <span class="error-msg" id="enquiry-phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-subject">Subject: <span class="required">*</span></label>
+                    <input type="text" id="enquiry-subject" name="subject" placeholder="Enter the subject" required>
+                    <span class="error-msg" id="enquiry-subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry-message">Your Message: <span class="required">*</span></label>
+                    <textarea id="enquiry-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    <span class="error-msg" id="enquiry-message-error"></span>
+                </div>
+
+                <div class="form-actions" style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                    <button type="submit" class="btn-primary" id="enquiry-submit-btn">Submit Enquiry</button>
+                    <button type="reset" class="btn-secondary" id="enquiry-reset-btn">Clear Form</button>
+                </div>
+
+                <!-- Dynamic Quotation & Confirmation Output -->
+                <div id="enquiry-response-box" style="display: none; margin-top: 2rem;"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="global-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Food Lover's Market Redesign Project. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
